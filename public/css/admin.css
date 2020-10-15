@@ -1,0 +1,106 @@
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: IRANSansWeb;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.page_sidebar {
+    width: 240px;
+    background: #263238;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url("../fonts/IRANSansWeb.eot") format("embedded-opentype"),
+    url("../fonts/IRANSansWeb.woff") format("woff"),
+    url("../fonts/IRANSansWeb.ttf") format("truetype");
+    font-size: 15px;
+}
+
+#sidebar_menu {
+    padding: 0px;
+    margin-top: 60px;
+}
+
+#sidebar_menu li {
+    list-style: none;
+}
+
+#sidebar_menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.child_menu {
+    padding-top: 10px !important;
+    background: #2c3B40;
+    display: none;
+}
+
+.child_menu a {
+    width: 100%;
+    font-size: 13px !important;
+    padding-top: 5px !important;
+}
+
+#sidebar_menu .fa-angle-left {
+    float: left;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+#sidebar_menu .active {
+    background: #00bfd6;
+}
+
+.page_sidebar .fa-bars {
+    color: white;
+    font-size: 18px;
+    float: left;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.toggled {
+    width: 50px !important;
+}
+
+.toggled .sidebar_menu_text {
+    display: none;
+}
+
+.toggled .fa-angle-left {
+    display: none;
+}
+
+.toggled .fa-angle-down {
+    display: none;
+}
+
+.toggled #sidebar_menu li a {
+    text-align: center;
+}
+
+.toggled .child_menu {
+    margin-right: 50px;
+    width: 230px !important;
+    position: absolute;
+    margin-top: -41px;
+    z-index: 99999999;
+    border-right: 1px solid #E1E1E1;
+}
+
+.toggled .child_menu a {
+    text-align: right !important;
+}
